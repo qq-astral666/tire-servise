@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цены на услуги — AutoMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container header-flex">
+            <a href="index.html" class="logo">Auto<span>Master</span></a>
+            <nav>
+                <a href="services.html" class="nav-link">Услуги</a>
+                <a href="prices.html" class="nav-link">Цены</a>
+                <a href="contacts.html" class="nav-link">Контакты</a>
+            </nav>
+            <a href="tel:+79242152141" class="call-btn">Позвонить</a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main class="container">
+        <h2 class="section-title">Прайс-лист</h2>
+
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Наименование услуги</th>
+                    <th>Легковые</th>
+                    <th>SUV / Минивэн</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Комплексный шиномонтаж (4 шт)</strong></td>
+                    <td>от 2 200 ₽</td>
+                    <td>от 2 800 ₽</td>
+                </tr>
+                <tr>
+                    <td>Балансировка колес (прецизионная)</td>
+                    <td>800 ₽</td>
+                    <td>1 200 ₽</td>
+                </tr>
+                <tr>
+                    <td>Ремонт бокового пореза (вулканизация)</td>
+                    <td>1 200 ₽</td>
+                    <td>1 500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Правка литого диска (1 шт)</td>
+                    <td>от 1 500 ₽</td>
+                    <td>от 2 000 ₽</td>
+                </tr>
+                <tr>
+                    <td>Сезонное хранение шин (6 месяцев)</td>
+                    <td>3 000 ₽</td>
+                    <td>3 500 ₽</td>
+                </tr>
+                <tr>
+                    <td>Технологическая мойка колес</td>
+                    <td>400 ₽</td>
+                    <td>600 ₽</td>
+                </tr>
+                <tr>
+                    <td>Зачистка и смазка ступиц</td>
+                    <td>200 ₽</td>
+                    <td>200 ₽</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Центрированный блок с кнопкой -->
+        <div class="price-footer">
+            <p class="price-note">* Указанные цены являются ориентировочными. Точная стоимость зависит от радиуса колес (R13-R22) и сложности работ.</p>
+            <a href="contacts.html" class="btn-submit">Получить точный расчет</a>
+        </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 AutoMaster. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <!-- Подключаем стили прямо здесь для надежности центрирования кнопки -->
+    <style>
+        .price-footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Центрируем кнопку и текст */
+            margin: 40px 0 60px;
+            text-align: center;
+        }
+
+        .price-note {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 25px;
+            max-width: 800px;
+        }
+
+        .btn-submit {
+            display: inline-block;
+            background: #ff4d4d;
+            color: white;
+            padding: 18px 45px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #cc0000;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background: #000;
+            padding: 30px 0;
+            border-top: 1px solid #333;
+            text-align: center;
+            color: #555;
+            margin-top: auto;
+        }
+    </style>
+</body>
+</html>
