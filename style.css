@@ -121,3 +121,22 @@ footer, .footer { background: #000; color: #555; text-align: center; padding: 25
     font-style: normal; /* Убираем курсив, чтобы было строже */
     font-size: 0.95rem;
 }
+
+@media (max-width: 768px) {
+    header, .header {
+        flex-direction: column !important; /* Выстраиваем логотип и меню вертикально */
+        gap: 15px !important;              /* Делаем отступ между логотипом и ссылками */
+        padding: 15px 5% !important;
+        text-align: center !important;
+    }
+    nav, .nav {
+        display: flex !important;
+        flex-wrap: wrap !important;        /* Разрешаем кнопкам переноситься на новый ряд */
+        justify-content: center !important;
+        gap: 10px !important;
+    }
+    nav a, .nav a {
+        margin: 0 5px !important;          /* Делаем компактные отступы по бокам */
+        font-size: 0.9rem !important;      /* Слегка уменьшаем текст под экраны мобильных */
+    }
+}
